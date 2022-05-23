@@ -28,14 +28,30 @@
         //논리 연산 - 논리곱 &&(두 항이 모두 참일때 참, 나머지는 거짓)
         result = (num1 > num2) && (num1 == num2);
         console.log(result);  // false
+        /*
+            T && T = T
+            T && F = F
+            F && T = F
+            F && F = F
+        */
 
         // 논리합 || - 두 항 중 하나이상 참이면 참
         result = (num1 > num2) || (num1 == num2);
         console.log(result);  // true
+         /*
+            T || T = T
+            T || F = T
+            F || T = T
+            F || F = F
+        */
 
         //논리 부정 ! - 거짓이니까 참 
         result = !(num1 < num2) ;
         console.log(result); // true
+         /*
+        
+       
+        */
     </script>
 </body>
 </html>

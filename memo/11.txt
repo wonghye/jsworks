@@ -1,0 +1,63 @@
+day 11
+
+대입, 복합대입, 산술, 비교, 논리
+삼항 (조건) 연산자
+
+자료형 type - 숫자,문자,불릴언,배열,객체
+형변환 type conversion 
+
+문자형 -> 숫자형 : 
+number (문자) : 정수,실수 
+/ parseInt(문자) : 정수
+/parseFloat(문자) : 실수
+
+숫자형 -> 문자형
+toString(숫자) : 문자
+
+변수 variable
+var, let - 자료형 예약여
+상수 constant variable
+const - 상수형 예약어
+
+.toFixed(n) : 소수 n째 짜리 설정 
+
+
+조건문
+
+if문 (조건식){ 실행 
+}
+if ~ else 문
+if문 (조건식){ 조건식 true : 실행;
+}
+else {
+     조건식 false 이면 실행;
+}
+
+if ~ else if() ~ else문
+
+if(조건식1) {
+    조건식1이 true면 실행
+} else if (조건식2){
+  조건식2이 true면 실행 
+}else if (조건식3){
+조건식3이 true면 실행 
+} 
+else { 조건식 1,2,3이 모두 false면 실행}
+
+조건 - if문, switch 문
+반복 - while , for 문
+
+while 문
+초기값(변수선언)
+while (조건식) {
+실행문; 
+증감값; }
+
+무한 반복 조건문
+while ~ if ~ break 
+while (true){ 
+   if (){
+	break; 
+   }
+}
+
