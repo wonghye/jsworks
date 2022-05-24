@@ -1,8 +1,8 @@
 // 입력 (변수 선언 및 값 저장)
-let score = 75;
-let grade = "";  // 문자형 변수 초기화
+let score = Number(prompt("점수를 입력하세요."));
+let grade = "";  // (공백문자 "") 문자형 변수 초기화
 
-// 연산 조건문 출력
+// 연산 if조건문 출력
 if(score >= 90 && score <= 100){
     grade = "A";
 }
