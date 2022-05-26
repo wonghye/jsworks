@@ -7,9 +7,9 @@
     <title>onclick 속성</title>
 </head>
 <body> 
-    <p id="demo">  </p>
+    
     <button type="button" onclick="fnCheck()">로그인</button>
-   
+    <p id="demo">  </p>
     <script>
         function fnCheck(){
             //alert("아이디나 비밀번호를 확인해주세요.");
@@ -18,6 +18,7 @@
             //innerHTML - html를 적용하는 속성 (property)
             let str = "아이디나 비밀번호를 확인해주세요.";
             document.getElementById("demo").innerHTML = str;
+            // document.getElementById("demo").innerHTML = "아이디나 비밀번호를 확인해주세요";
 
             // 색상의 스타일 변경 
             document.getElementById("demo").style.color= "red";

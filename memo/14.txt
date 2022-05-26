@@ -1,0 +1,10 @@
+day 14
+
+배열 = [ x, xx ,xxx , xxxx ]
+배열 [0] = "x"
+
+배열 선언 방법
+let number = new Array();
+
+number[0] = 1
+number[1] = 2

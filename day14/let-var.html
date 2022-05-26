@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>let & var</title>
+</head>
+<body>
+    <script>
+        // 변수의 선언과 재할당
+        // 원칙적으로 같은 이름의 변수를 재할당 할 수 없음.
+        // var는 가능 ,  되도록 let 사용함
+        /*
+        var x =1;
+
+        var x = 2;
+
+        console.log(x);  // 2
+        */
+
+        /* 
+        let x =1;
+        //let x =2;
+        x = 2; // 재할당하려면 let 빼고 사용하면 됨.
+        console.log(x); // 2
+        */
+
+
+        // var의 호이스팅(hoisting) : 인터프리터가 나중에 선언해도 기억함
+        // 원칙적으로 출력이 먼저 x, var는 가능함
+        /* 
+        console.log(a);
+        var a = 1;       // 에러 없음
+        console.log(a);  // 1
+        */
+
+        
+        console.log(b);
+        // let b = 2;  // 에러 발생
+
+    </script>
+</body>
+</html>
