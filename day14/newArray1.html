@@ -39,11 +39,16 @@
         console.log(number[1] > number[2]);  // true 
 
         //총점
-        let sumV = 0; // 총점을 저장할 변수
+        let sumV = 0;   // 총점을 저장할 변수
+        let avgV = 0.0; // 평균을 저장할 변수
         for(let i =0; i < number.length; i++){
-            sumV = sumV + number[i];
+            sumV += number[i]; // sumV = sumV + number[i];
         }
+        //평균 = 총점 / 갯수
+        avgV = sumV / number.length;
+
         document.write("<br>총점 : " + sumV);
+        document.write("<br>평균 : " + avgV);
         
         /* 디버깅
         i = 0, 10= 0 + 10
