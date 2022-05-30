@@ -1,0 +1,31 @@
+이스케이프 문자
+\n - 줄바꿈
+
+
+배열에 추가, 삭제 - 함수
+배열이름 push('a') - 맨 뒤의 요소추가
+배열 이름.pop() - 맨 뒤의 요소 삭제
+
+배열이름.unshift('a') - 맨 앞의 요소 추가
+배열이름.shift() - 맨 앞의 요소 삭제
+
+특정 위치에서 추가, 삭제
+배열이름.splice( 2, 1) : 2번 인덱스에서 1개 삭제
+배열이름.splice( 2,0,"k") : 2번 인덱스삭제 안하고 "k" 추가
+
+
+배열이름.indexOf() :  위치(인덱스) 찾는 함수
+배열이름.lastIndexOf() : 
+
+객체 - 사물의 대상 ,복합자료형
+let person = [손흥민, 31, false]
+let person = {
+	let name : "소ㄴ",
+	let age : 31,
+	let ismarried : flase ,
+	play : function (){"골인"}
+ 	}
+
+let compute = function(){
+	실행문}
+

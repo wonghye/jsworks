@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전역 변수와 지역 변수</title>
+</head>
+<body>
+    <script>
+        let kor = 90;
+        function getScore(){
+            kor = 100;
+            console.log(kor); // 100
+        }
+
+        getScore();
+        console.log(kor);  // 100
+
+        //지역변수
+        let eng = 90;
+        let score = function(){
+            let eng = 100;
+            console.log("지역 변수 : "+ eng);
+        }
+
+        //호출
+        score();
+        console.log("전역 변수 : " + eng); // 90
+    </script>
+</body>
+</html>
