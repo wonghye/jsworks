@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            width: 800px; margin: 0 auto;
+        }
+        section,p { text-align: center;}
+        h1{
+            display: inline-block;
+            padding: 10px 20px;
+            background: #eee;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>로또 추천 번호</h1>
+    </section>
+
+    <script>
+        let number = 45;
+        let winnerNum =  new Array(6);  // 로또 배열 생성
+
+        //랜덤번호 추첨
+        document.write("<p>번호 : ");
+        for(var i = 0; i < winnerNum.length; i++){
+        let pickedNum = Math.floor(Math.random()*number) + 1; // 랜덤번호 
+        winnerNum[i] = pickedNum;  // 로또 배열에 저장
+        // 중복 코드
+        for(let j = 0; j < i; j++){
+            if(winnerNum[j] == winnerNum[i]){ // 이전 인덱스와 값이 같으면
+                i--; // 인덱스 1감소
+                //break;
+            }
+        }
+    }
+        //출력
+        for(var i = 0; i < winnerNum.length; i++){
+        // document.write( winnerNum[i] + ", "); 
+        if ( i == winnerNum.length -1){
+            document.write(winnerNum[i] + " ");
+
+        }else{
+            document.write( winnerNum[i] + ", ");
+        } 
+    }
+        document.write("</p>")
+    </script>
+</body>
+</html>

@@ -15,12 +15,23 @@ else{
     for(var i = 0; i < winner.length; i++){
         let pickedOne = Math.floor(Math.random()*member) + 1;
         winner[i] = pickedOne;  
+        // 중복 코드
         for(let j = 0; j < i; j++){
             if(winner[j] == winner[i]){ // 이전 인덱스와 값이 같으면
                 i--; // 인덱스 1감소
+                //break;
             }
         }
     }
+    /*
+    ex) 응모자 수 20명 
+    i=0, winner[0] = 4, j=0, false
+    i=1, winner[1] = 14, j=0, winner[0] = 4, j =1, false
+    i=2, winner[2] = 11, j=0, winner[0] = 4, j =1, winner[1] = 14, j=2, false
+    i=3, winner[3] = 11, j=0, winner[0] = 4, j =1, winner[1] = 14, j=2, winner[2] = 11 ,
+    i=3, winner[3] = 5, j=0, winner[0] = 4, j =1, winner[1] = 14, j=2, winner[2] = 11 ,j=3 false
+    i=4, winner[4] = 18, j=0, winner[0] = 4, j =1, winner[1] = 14, j=2, winner[2] = 11 ,j=3 
+    */
 
     //출력
     for(var i = 0; i < winner.length; i++){
