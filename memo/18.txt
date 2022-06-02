@@ -1,0 +1,17 @@
+문자열이 일치하면 그 위치(index) 를 반환
+indexOf();
+
+window 객체
+clearInterval ( )
+
+
+preventDefault () - 이벤트의 실행을 막아줌
+stopPropagaion() - 이벤트 버블링 방지(겹치는현상 방지)
+
+속성 관련 함수
+getAttribute( ) - 가져오기
+setAttribute( ) - 설정(변경)하기
+
+큰이미지 -  querySelector("#cup")
+
+node 추가 
