@@ -1,0 +1,10 @@
+노드 추가/ 삭제
+추: appendchild( ) ,
+-태그요소 :  createElement( ) , appendchild( )
+-속성요소 :  createAttribute() ,setAttributeNode()
+
+삭 :removechild( )
+-태그요소 : removechild( )
+- 속성요소 : removeAttribute()
+
+BOM (Browser Object Model)
