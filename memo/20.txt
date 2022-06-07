@@ -1,0 +1,8 @@
+20
+
+대소문자 허용 안함
+test - true/ false (유효성 검사)
+search 문자열 - 결과 : 찾은 인덱스 (위치)
+
+new RegExp(문자열) -  결과 : t/ f
+

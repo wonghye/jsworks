@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정규 표현식</title>
+    <script>
+        //문자열의 일치 여부 - test()함수
+        //방법1 - / 표현식 /
+        //방법2 -  RegExp(표현식) 함수 사용
+        
+        let text = "Hello World!";
+
+        //1.
+        let pat1 = /world/;  //표현식
+        let result = pat1.test(text); // true, false
+        console.log(result);
+
+        //2.
+        let pat2 = new RegExp("Hello");
+        let result2 = pat2.test(text);
+        console.log(result2);
+
+        //문자열 및 글자수 일치 여부
+        let id = "a123";
+
+        //let RegExp1 = /[0-9A-Za-z]{5}/;  // 'a123'를 찾음(개수 일치)
+        //let RegExp2 = /[0-9A-Z]/;  // 일치하는 1개를 찾음
+        let RegExp3 = /[0-9A-Z]+/;  // 모두 문자를 찾음
+        //console.log(RegExp1);
+        console.log(RegExp3.test(id));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
