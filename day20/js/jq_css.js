@@ -4,10 +4,10 @@ $(document).ready(function(){
     $("td:first").css("background","yellow");
     $("td:last").css("background","green");
     $(":header").css("background","blue");
-    $("li:eq(0)").css("background","navy");
+    $("li:eq(0)").css("background","navy");  //0번 인덱스
     $("li:gt(0)").css("background","purple");
     $("li:lt(3)").css("border","4px solid gray");
-    $(":root").css("background","lightgray");
+    $(":root").css("background","lightgrey");
     //실행함수 (매개 변수가 없는 함수)
     /*
     (function upDown(){
