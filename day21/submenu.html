@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>서브 메뉴 만들기</title>
     <style>
-        .wrap .ul1{display: none; }
+        .wrap .ul1, .ul2{display: none; }
         .wrap a{text-decoration: none}
         
     </style>
@@ -15,18 +15,32 @@
         $(document).ready(function(){
             //학교 안내
             $(".btn1 a").on("mouseover" , function(){
-                let a = $(this); // 이벤트가 일어나는 대상
-                a.parent().next().show(); // 보이기
-                a.css("background", "pink");
+                //let a = $(this); // 이벤트가 일어나는 대상
+                //a.parent().next().show(); // ul1 보이기
+                $(".ul1").css("display" , "block");
+                $(".btn1 a").css("background", "pink");
+                //a.css("background", "pink");
             });
+
             $(".btn1 a").on("mouseout" , function(){
                 let a = $(this); // 이벤트가 일어나는 대상
-                a.parent().next().hide(); // 숨기기
+                a.parent().next().hide(); // ul1 숨기기
                 a.css("background", "white");
+                //$(".ul1").css("display" , "none");
             });
 
             //학교생활
-           
+            $(".btn2 a").on("click" , function(){
+                //let a = $(this);
+                //a.parent().next().show();
+                $(".ul2").css("display" , "block");
+            });
+
+            $(".btn2 a").on("mouseout" , function(){
+                //let a = $(this);
+                //a.parent().next().show();
+                $(".ul2").css("display" , "none");
+            });
         });
     </script>
 </head>
