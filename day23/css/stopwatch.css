@@ -1,0 +1,14 @@
+*{margin: 0; padding: 0;}
+body{
+    height: 100vh; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.box{ width: 200px; height: 200px;}
+.timerBox{ width: 200px; outline: 2px solid #000;}
+.timerBox .time{ font-size: 25pt; color: #444; text-align: center;}
+
+.btnBox{ margin: 20px auto; text-align: center;}
+.btnBox .fa-solid{ margin: 0 5px; font-size: 30pt; color: #f60; cursor: pointer;}
