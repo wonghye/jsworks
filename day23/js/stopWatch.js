@@ -60,7 +60,7 @@ function stopWatch(){
         }
     });
 
-    //정지
+    //정지 -stop
     $("#stopBtn").click(function(){
         if(time != 0){
             $(".fa-solid").css("color", "#f60")

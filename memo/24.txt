@@ -1,0 +1,12 @@
+24
+
+응답코드 
+200, 304 = success
+404 = error ( 파일을 찾을수업습니다.)
+500  = 코드에러
+
+쿼리 반복문
+$.each(dat, function(index, obj))
+
+rem = 16px html 크기로 계산
+em = 부모요소 크기의 상대크기 
