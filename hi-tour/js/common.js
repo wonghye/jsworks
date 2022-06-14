@@ -1,10 +1,16 @@
 
 $(document).ready( function() {
+	//let isOver1 = false ; // 상위 메뉴(마우스오버 : true/ 오버x 상태: false)
+	//let isOver2 = false;  // 하위 메뉴 오버되면 true
+	let isOver1 = [false, false, false, false];
+	let isOver2 = [false, false, false, false];
 
 	//fadeOut()에 시간 설정 (반복문)
 	function goHide(){
-		for( var i = 1; i <= 4; i++){
-			$(".gnb_depth2_" + i).fadeOut("fast");
+		for( var i = 0; i < 4; i++){
+			if(!isOver1[i] && !isOver2[0]){  // 상위 하위 메뉴가 닿았을 때
+				$(".gnb_depth2_" + (i+1)).fadeOut("fast");
+			}
 		}
 	}
 
@@ -13,60 +19,115 @@ $(document).ready( function() {
 		//서브메뉴 나타나기(header의 너비가 800보다 클때 )
 		if(parseInt( $("header").css("width"))> 800)
 			$(".gnb_depth2_1").fadeIn("fast");
+		isOver1[0] = true;
 	}).focus(function(){ // 탭 사용시 메뉴 나타나기
 		if(parseInt( $("header").css("width"))> 800)
 			$(".gnb_depth2_1").fadeIn("fast");
-	})
-	.mouseout(function(){
+		isOver1[0] = true;
+	}).mouseout(function(){
 		//$(".gnb_depth2_1").fadeOut("fast");
-		setTimeout(goHide, 500);  // 0.5s
+		setTimeout(goHide, 300);  // 0.5s
+		isOver1[0] = false;
 	}).blur(function(){ // 탭하면 사라지기 위해서
-		setTimeout(goHide, 500);
-	})
+		setTimeout(goHide, 300);
+		isOver1[0] = false;
+	});
+	// 하위메뉴
+	$(".gnb_depth2_1").mouseover(function(){
+		isOver2[0] = true;
+	}).focus(function(){
+		isOver2[0] = true;
+	}).mouseout(function(){
+		isOver2[0] = false;
+		setTimeout(goHide, 300);
+		isOver2[0] = false;
+	});
 
+	
 	$(".openAll2").mouseover(function(){
 		//서브메뉴 나타나기(header의 너비가 800보다 클때 )
 		if(parseInt( $("header").css("width"))> 800)
 			$(".gnb_depth2_2").fadeIn("fast");
+		isOver1[1] = true;
 	}).focus(function(){ // 탭 사용시 메뉴 나타나기
 		if(parseInt( $("header").css("width"))> 800)
 			$(".gnb_depth2_2").fadeIn("fast");
-	})
-	.mouseout(function(){
+		isOver1[1] = true;
+	}).mouseout(function(){
 		//$(".gnb_depth2_2").fadeOut("fast");
-		setTimeout(goHide, 500);  // 0.5s
+		setTimeout(goHide, 300);  // 0.5s
+		isOver1[1] = false;
 	}).blur(function(){
-		setTimeout(goHide, 500);
+		setTimeout(goHide, 300);
+		isOver1[1] = false;
 	});
+	// 하위메뉴
+	$(".gnb_depth2_2").mouseover(function(){
+		isOver2[1] = true;
+	}).focus(function(){
+		isOver2[1] = true;
+	}).mouseout(function(){
+		isOver2[1] = false;
+		setTimeout(goHide, 300);
+		isOver2[1] = false;
+	});
+
 
 	$(".openAll3").mouseover(function(){
 		//서브메뉴 나타나기(header의 너비가 800보다 클때 )
 		if(parseInt( $("header").css("width"))> 800)
 			$(".gnb_depth2_3").fadeIn("fast");
+		isOver1[2] = true;
 	}).focus(function(){ // 탭 사용시 메뉴 나타나기
 		if(parseInt( $("header").css("width"))> 800)
 			$(".gnb_depth2_3").fadeIn("fast");
-	})
-	.mouseout(function(){
+		isOver1[2] = true;
+	}).mouseout(function(){
 		//$(".gnb_depth2_3").fadeOut("fast");
-		setTimeout(goHide, 500);  // 0.5s
+		setTimeout(goHide, 300);  // 0.5s
+		isOver1[2] = false;
 	}).blur(function(){
-		setTimeout(goHide, 500);
+		setTimeout(goHide, 300);
+		isOver1[2] = false;
 	});
+	// 하위메뉴
+	$(".gnb_depth2_3").mouseover(function(){
+		isOver2[2] = true;
+	}).focus(function(){
+		isOver2[2] = true;
+	}).mouseout(function(){
+		isOver2[2] = false;
+		setTimeout(goHide, 300);
+		isOver2[2] = false;
+	});
+
 
 	$(".openAll4").mouseover(function(){
 		//서브메뉴 나타나기(header의 너비가 800보다 클때 )
 		if(parseInt( $("header").css("width"))> 800)
 			$(".gnb_depth2_4").fadeIn("fast");
+		isOver1[3] = true;
 	}).focus(function(){ // 탭 사용시 메뉴 나타나기
 		if(parseInt( $("header").css("width"))> 800)
 			$(".gnb_depth2_4").fadeIn("fast");
-	})
-	.mouseout(function(){
+		isOver1[3] = true;
+	}).mouseout(function(){
 		//$(".gnb_depth2_4").fadeOut("fast");
-		setTimeout(goHide, 500);  // 0.5s
+		setTimeout(goHide, 300);  // 0.5s
+		isOver1[3] = false;
 	}).blur(function(){
-		setTimeout(goHide, 500);
+		setTimeout(goHide, 300);
+		isOver1[3] = false;
+	});
+	// 하위메뉴
+	$(".gnb_depth2_4").mouseover(function(){
+		isOver2[3] = true;
+	}).focus(function(){
+		isOver2[3] = true;
+	}).mouseout(function(){
+		isOver2[3] = false;
+		setTimeout(goHide, 300);
+		isOver2[3] = false;
 	});
 
 	
