@@ -213,6 +213,7 @@ footer .foot_area .snslink li + li + li a {background-image:url(../img/ico_insta
 .about_area h2 {padding:55px 0 105px; text-align:center; font-size:40px;}
 .about_area .about_box {background:#f4f0e9;}
 .about_area .place_list {}
+/* 사진 배열 */
 .about_area .place_list li {float:left; width:32%; margin-left:2%; text-align:center; position:relative; top:-50px;}
 .about_area .place_list li:first-child {margin-left:0;}
 .about_area .place_list li .img_topplace {width:100%;}
@@ -276,14 +277,17 @@ footer .foot_area .snslink li + li + li a {background-image:url(../img/ico_insta
 .minisrch_form {width:100%; text-align:right; margin-bottom:20px;}
 .minisrch_form .tbox {padding:0 5px 0 30px; width:200px; height:35px; line-height:35px; border:none; border-bottom:1px solid #ccc; background:url('../img/ico_search.png') no-repeat 10px 50%; background-size:15px;}
 .bbsListTbl {width:100%; border-top:2px solid #384d75;}
+/* 표 만들기 */
 .bbsListTbl th, .bbsListTbl td {padding:10px; box-sizing:border-box; height:55px;}
 .bbsListTbl th {border-bottom:1px solid #ccc; background:#f0f3fa;}
 .bbsListTbl td {text-align:center; line-height:1.3; border-bottom:1px solid #ccc;}
 .bbsListTbl td.tit_notice {text-align:left;}
+/* 표 100퍼센트 맞춰서 */
 .bbsListTbl td:nth-child(1) {width:10%;}
 .bbsListTbl td:nth-child(2) {width:55%;}
 .bbsListTbl td:nth-child(3) {width:15%;}
 .bbsListTbl td:nth-child(4) {width:20%;}
+/* 글 번호 목록 */
 .pagination {padding:40px 0 0; text-align:center;}
 .pagination a {display:inline-block; }
 .pagination a.pbtn {display:inline-block; padding:7px; text-align:center; vertical-align:middle; font-size:0;}
@@ -299,6 +303,7 @@ footer .foot_area .snslink li + li + li a {background-image:url(../img/ico_insta
 .bbsview_list li.bbs_date {height:40px; line-height:40px; float:left; width:50%;}
 .bbsview_list li.bbs_content {clear:both; min-height:200px; padding:20px 15px;}
 .bbsview_list li.bbs_content .editer_content {line-height:1.4;}
+/* 글목록 */
 .near_list {border-top:1px solid #ccc;}
 .near_list li {padding:10px; border-bottom:1px solid #ccc;}
 .near_list li:after {content:""; display:block; clear:both;}
@@ -306,21 +311,28 @@ footer .foot_area .snslink li + li + li a {background-image:url(../img/ico_insta
 .near_list li h4.next {background:url('../img/ico_nearPrev.png') no-repeat 12px 50%;}
 .near_list li a {float:left;}
 
+
 /* place_area */
+
 .bodytext_area.place_area {padding:55px 0 0;}
 .program_list li {float:left; width:31.5%; margin:0 0.9%;}
+/* 3n+1 = 3의배수+1 , 3*0= 0 +1 = 1부터 시작  */
 .program_list li:nth-child(3n+1) {clear:both;}
 .program_list li .img_place {display:block;  width:100%;}
 .program_list li h3 {padding:40px 0 0; font-weight:bold; font-size:22px;}
+/* letter-spacing = 글자 간격 */
 .program_list li .subttl {padding:25px 0 0; font-weight:bold; font-size:16px; color:#fa6400; letter-spacing: 0;}
 .program_list li .program_content {padding:15px 0 0; line-height:1.8; font-size:15px;}
 .program_list li .program_content p {width:100%; overflow:hidden; word-break:keep-all;}
+
+/* 더보기 접기 , 버튼 */
 .program_list li .program_content p .subtxt {display: none;}
 .program_list li .btn_more {padding:10px 0 20px; text-align:center; font-size:12px;}
 .program_list li .btn_more a {display:inline-block; padding:5px 7px; border-radius:3px; background:#000; color:#fff;}
 
 /* login */
 .login_wrap {width:468px; margin:50px auto 0;}
+/* 로그인 중앙 사진 */
 h1.loginTit {text-align:center;}
 h1.loginTit a {display:block;}
 h1.loginTit a img {width:100%;}
@@ -328,14 +340,17 @@ h1.loginTit a img {width:100%;}
 .login_list li {position:relative; margin-bottom:4px; height:54px; box-sizing:border-box; padding-left:50px; border-radius:5px;}
 .login_list li a {display:block; height:54px; box-sizing:border-box; line-height:54px; text-align:center; vertical-align:middle; font-size:14px; color:#fff;}
 .login_list li:last-child {margin-bottom:0;}
+/* 이미지 첨부 */
 .login_list li.kakao {background:#ffea26 url(../img/ico_kakao.png) no-repeat 15px 50%; background-size:45px 45px;}
 .login_list li.kakao a {color:#202224;}
 .login_list li.naver {background:#00c300 url(../img/ico_naver.png) no-repeat 15px 50%; background-size:45px 45px;}
 .login_list li.facebook {background:#405ea9 url(../img/ico_face.png) no-repeat 15px 50%; background-size:45px 45px;}
 .login_list li.cellphone {background:#888 url(../img/ico_cellphone.png) no-repeat 15px 50%; background-size:45px 45px;}
 
+/* 로그인 유지, 스위치부분 */
 .btnonoff_line {width:75%; margin:10px auto; text-align:center;}
 .btnonoff_line .btn_onoff {margin-left:5px; font-size:14px;}
+/* z-index = 숫자 높을수록 수직 위로 (2-1-0) */
 .switch {position:relative; display:inline-block; width:35px; height:22px; margin:0; padding:0; border-radius:16px; background:#e5e5e5; vertical-align:top; appearance:none; cursor:pointer; z-index:0;}
 .switch:before {content:""; position:absolute; left:1px; top:1px; width:33px; height:20px; border-radius:15px; background:#fff; z-index:1;}
 .switch:after {content:""; position:absolute; left:1px; top:1px; width:19px; height:19px; border-radius:20px; background:#fff; -webkit-transition-duration:300ms; transition-duration:300ms; -webkit-box-shadow:0 2px 5px #999; box-shadow:0 2px 5px #999; z-index:2;}
@@ -344,6 +359,7 @@ h1.loginTit a img {width:100%;}
 
 /* 회원가입 */
 .appForm {margin:40px auto 0;}
+/* 필수입력 */
 .appForm .info_pilsoo {position:relative; padding-left:20px; padding-bottom:10px; border-bottom:2px solid #000; font-size:15px; color:#f00;}
 .appForm .pilsoo_item:before {content:"*"; display:inline-block; position:absolute; left:5px; top:3px; width:15px; font-weight:bold; font-size:17px; color:#f00;}
 .appForm .app_list {padding:10px 0; border-bottom:1px solid #ccc;}
@@ -357,14 +373,17 @@ h1.loginTit a img {width:100%;}
 .appForm .app_list li .app_content label {vertical-align:middle;}
 .appForm .app_list li .select_common {width:160px; height:45px; background-position:100% 50%; border:1px solid #ccc;}
 .appForm .app_list li .select_common select {width:200px; height:43px;}
+/* 문의내용 */
 .appForm .app_list li textarea {height:245px;}
 .appForm .info_line {padding:10px 10px 20px; font-size:15px;}
 .btn_line {padding:20px 0;}
 .btn_line a.btn_app {height:37px; line-height:37px; margin-left:100px; font-size:14px;}
 
+
 /* MYPAGE */
 .myinfo dt {width:170px; height:70px; line-height:70px; text-align:center; background:#dfe3ea; font-size:18px; background:#000; color:#fff;}
 .myinfo dd {border-top:2px solid #000;}
+
 .regForm .reg_list {padding:10px 0 0; background:url(../img/bg_reglist.png) repeat-y;}
 .regForm .reg_list li {min-height:60px; padding:0; border-bottom:1px solid #ccc;}
 .regForm .reg_list li .tit_lbl {position:relative; float:left; width:150px; box-sizing:border-box; padding-left:20px; line-height:60px; font-weight:bold; font-size:16px;}
@@ -402,9 +421,11 @@ h1.loginTit a img {width:100%;}
 
 /* 모바일 기준 - 800px 미만 */
 @media all and (max-width:800px) {
+	
 	.btn_bbs {display:inline-block; width:100%; text-align:center; height:35px; font-size:14px; line-height:35px; vertical-align:middle; background:#384d75; color:#fff !important;}
+	/* 목록 사이즈 넓게 */
 	.btn_baseColor {display:inline-block; width:100%; height:50px; line-height:50px; background:#384d75; font-weight:bold; font-size:20px; color:#fff !important;}
-
+	
 	.box_inner {width:100%;}
 
 	header {height:90px; text-align:center; z-index:200; background:rgba(0,0,0,0.5);}
@@ -462,6 +483,7 @@ h1.loginTit a img {width:100%;}
 	.about_area h2 b {display:block; padding-top:10px;}
 	.about_area .about_box {background:#fff;}
 	.about_area .place_list {}
+	/* 사진 배열 */
 	.about_area .place_list li {float:none; width:100%; margin:0; box-sizing:border-box; padding:0 20px; top:0;}
 	.about_area .place_list li p.txt {padding:10px 50px 30px; line-height:1.4;}
     .about_area .place_list li .view {padding-bottom: 10px; margin:0 0 30px;}
@@ -501,6 +523,7 @@ h1.loginTit a img {width:100%;}
 	/* sub_page */
 	.location_area {height:260px; background:url(../img/img_top2.jpg) no-repeat center bottom / cover;}
 	.location_area h2.tit_page {padding:140px 0 0 0; margin:0 45px;}
+	/* 모바일버전일때 글씨 사라짐 */
 	.location_area p.location {display:none;}
 	.location_area ul.page_menu {display:block; padding:10px 0 0 45px;}
 	.location_area ul.page_menu li {float:left; padding-bottom:10px;}
@@ -513,6 +536,7 @@ h1.loginTit a img {width:100%;}
 	.bbsListTbl th, .bbsListTbl td {padding:10px; box-sizing:border-box; height:45px;}
 	.bbsListTbl th {padding:0;}
 	.bbsListTbl th {border-bottom:1px solid #ccc; font-weight:bold; font-size:14px;}
+	/* 번호, 조회수 숨기기 1,3 */
 	.bbsListTbl th:nth-child(1) {display:none;}
 	.bbsListTbl th:nth-child(2) {width:70%;}
 	.bbsListTbl th:nth-child(3) {display:none;}
@@ -534,7 +558,9 @@ h1.loginTit a img {width:100%;}
 	.program_list li:first-child {border-top:none; padding-top:0;}
 	.program_list li h3 {padding:20px 0 0; text-align:center;}
 	.program_list li .subttl {padding:15px 0 0; text-align:center; font-size:18px;}
+	/* span태그 보이기 */
     .program_list li .program_content p .subtxt {display:inline;}
+	/* 더보기 버튼 안보이게 */
 	.program_list li .btn_more {display:none;}
 
 	/* login */
@@ -543,6 +569,7 @@ h1.loginTit a img {width:100%;}
 	.login_list {margin:50px auto 20px;}
 	.login_list li {height:50px;}
 	.login_list li a {height:50px; line-height:50px;}
+
 
 	/* 회원가입 */
 	.appForm {margin:20px auto;}
@@ -567,6 +594,7 @@ h1.loginTit a img {width:100%;}
 	.appForm .btn_line {padding:20px 0;}
 	.appForm .btn_line a.btn_app {margin-left:0;}
 
+
 	/* MYPAGE */
 	.mypageTab {position:relative;width:100%; margin:20px auto 0; padding-top:50px;}
 	.mypageTab dt {position:absolute; top:0; left:0; width:100px;}
@@ -575,10 +603,14 @@ h1.loginTit a img {width:100%;}
 	.mypageTab dt a.on {background:#000; color:#fff;}
 	.mypageTab dd.hidetab {display:none;}
 	.mypageTab dd {border-top:2px solid #000;}
+
+	/* 마이페이지 여기서부터 check */
 	.regForm {width:100%; margin:0 auto;}
 	.regForm .reg_list {padding:10px 0 0; background:none;}
+	/* .tit_lbl의 line-height때문에 => min-height 사용   */
 	.regForm .reg_list li {position:relative; min-height:50px; padding:0; border-bottom:1px solid #ccc;}
 	.regForm .reg_list li .tit_lbl {position:relative; float:none; width:auto; box-sizing:border-box; padding-left:10px; line-height:50px; font-weight:bold; font-size:16px;}
+	/* float 해제 */
 	.regForm .reg_list li .reg_content {float:none; width:auto; box-sizing:border-box; padding-left:10px; padding-top:0; padding-bottom:20px; font-size:15px;}
 	.regForm .reg_list li .reg_content * {vertical-align:middle;}
 	.regForm .reg_list li .reg_content.radio_area {padding-top:5px;}
